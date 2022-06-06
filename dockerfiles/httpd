@@ -1,0 +1,10 @@
+FROM httpd
+LABEL maintainer="Natalia Granato"
+ENV HTTPD_VERSION 1.0.0
+RUN apt-get update && apt-get upgrade
+RUN apt-get install apache2-doc apache2-utils -y
+RUN a2enmod cgid
+RUN a2enmod rewrite
+COPY . /usr/local/apache2/cgi-bin
+WORKDIR /usr/local/apache2/cgi-bin
+EXPOSE 80
