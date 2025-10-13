@@ -1,6 +1,6 @@
  
 # Etapa 1: Construção
-FROM ubuntu:24.04@sha256:59a458b76b4e8896031cd559576eac7d6cb53a69b38ba819fb26518536368d86 AS builder
+FROM ubuntu:24.04@sha256:66460d557b25769b102175144d538d88219c077c678a49af4afca6fbfc1b5252 AS builder
 # A instrução FROM especifica a imagem base para a etapa de construção.
 # Neste caso, utiliza a imagem do Ubuntu 22.04 como base.
 
@@ -15,7 +15,7 @@ RUN apt-get update && apt-get install -y nginx && rm -rf /var/lib/apt/lists/*
 COPY index.html /var/www/html/
 
 # Etapa 2: Imagem final
-FROM ubuntu:24.04@sha256:59a458b76b4e8896031cd559576eac7d6cb53a69b38ba819fb26518536368d86
+FROM ubuntu:24.04@sha256:66460d557b25769b102175144d538d88219c077c678a49af4afca6fbfc1b5252
 # A instrução FROM especifica a imagem base para a imagem final.
 # Neste caso, utiliza a imagem do Ubuntu 22.04 como base.
 
