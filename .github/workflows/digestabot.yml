@@ -25,7 +25,7 @@ jobs:
           egress-policy: audit
 
       - name: Checkout repository
-        uses: actions/checkout@8e8c483db84b4bee98b60c0593521ed34d9990e8 # v6.0.1
+        uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
 
       - name: Update image digests
         uses: chainguard-dev/digestabot@a3b776c1ca57d3127c85578cde8fef6eed3c75d3 # v1.2.3
