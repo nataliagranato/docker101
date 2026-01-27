@@ -1,2 +1,2 @@
-setuptools==80.10.1
+setuptools==80.10.2
 climage==0.2.2
