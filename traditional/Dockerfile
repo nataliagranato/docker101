@@ -1,5 +1,5 @@
 
-FROM ubuntu:24.04@sha256:c35e29c9450151419d9448b0fd75374fec4fff364a27f176fb458d472dfc9e54
+FROM ubuntu:24.04@sha256:186072bba1b2f436cbb91ef2567abca677337cfc786c86e107d25b7072feef0c
 
 RUN apt-get update && apt-get install nginx -y && rm -rf /var/lib/apt/lists/*
 
