@@ -1,4 +1,4 @@
-FROM cgr.dev/chainguard/python:latest@sha256:18974e90873baf1217c62e0daeed36ea873fb577193f7ce4814c051e78c68c03 as builder
+FROM cgr.dev/chainguard/python:latest@sha256:bd849aeb63c12208ea68faa568c3874737cdc4d3742619d27e33bfb980c5772c as builder
 
 ENV LANG=C.UTF-8
 ENV PYTHONDONTWRITEBYTECODE=1
@@ -12,7 +12,7 @@ COPY requirements.txt .
 
 RUN pip install --no-cache-dir -r requirements.txt
 
-FROM cgr.dev/chainguard/python:latest@sha256:18974e90873baf1217c62e0daeed36ea873fb577193f7ce4814c051e78c68c03
+FROM cgr.dev/chainguard/python:latest@sha256:bd849aeb63c12208ea68faa568c3874737cdc4d3742619d27e33bfb980c5772c
 
 WORKDIR /linky
 
